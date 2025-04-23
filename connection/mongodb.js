@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const connectDB = async () => {
   try {
-    await mongoose.connect(`${process.env.MONGODB_URI}/restaura`, {
+    await mongoose.connect(`${process.env.MONGODB_URI}`, {
       useUnifiedTopology: true,
     });
     console.log("MongoDB connected successfully");
